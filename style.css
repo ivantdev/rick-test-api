@@ -1,0 +1,116 @@
+:root {
+    --bg: rgba(158, 222, 241, 0.589);
+    --button-green-bg: rgb(89, 182, 89);
+    --button-red-bg: red;
+    --buton-blue-bg: rgb(15, 96, 107);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--bg);
+}
+
+button {
+    cursor: pointer;
+}
+
+main, header {
+    margin: 30px auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+main {
+    margin-bottom: 0;
+}
+
+header h1 {
+    font-weight: 300;
+    font-size: 2.8rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+.main__score {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+.main__img-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main__img-container img {
+    width: 100%;
+    max-width: 500px;
+    height: 400;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.yes-not {
+    margin: 20px auto;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.yes-not button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+
+#yes {
+    background-color: var(--button-green-bg);
+}
+
+#not {
+    background-color: var(--button-red-bg);
+}
+
+.main__next-container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+#next {
+    width: 80px;
+    height: 40px;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--buton-blue-bg);
+}
+
+#yes:disabled, #not:disabled, #next:disabled {
+    background-color: gray;
+}
